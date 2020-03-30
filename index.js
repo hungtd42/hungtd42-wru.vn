@@ -43,6 +43,10 @@ app.post("/webhook", (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("yeh me")
+})
+
 // Accepts GET requests at the /webhook endpoint
 app.get("/webhook", (req, res) => {
   /** UPDATE YOUR VERIFY TOKEN **/
